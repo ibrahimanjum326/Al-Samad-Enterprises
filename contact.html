@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Samad Enterprises</title>
+    <link rel="icon" href="icon.jpg">
+<style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        }
+ html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ }
+    nav{
+    background-color: black;
+    opacity:0.7;
+    height:fit-content;
+    width:100%;
+    padding-bottom: 0px;
+    position:relative;
+    z-index: 90;
+    overflow-y: auto;
+    border-bottom:2px solid white ;
+}
+.mainheading{
+    position: relative;
+    font-size: 40px;
+    text-align:center;
+    font-family: monospace;
+    background: linear-gradient(to left, #3dee8d9d, #19ce55); 
+    -webkit-background-clip:text; 
+    color: transparent;
+    margin: 0px;
+    img{
+        height: 80px;
+    }
+}
+.t{
+    background-color: black;
+    color:white;
+}
+.o{
+    background: none;
+    margin-left:12px;
+    border:0px;
+    padding: 0px;
+    border-radius: 0px;
+    width:25px;
+    transition: transform 0.2s ease;
+    transform: rotate(90deg);
+    color: white;
+}
+.o:focus {
+    transform: rotate(0deg);
+}
+    .sliding-div {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 2s ease;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    z-index: 500;
+}
+
+.sliding-div.slide-in {
+    transform: translateX(0);
+}
+
+.sliding-div.slide-out {
+    transform: translateX(-100%);
+    padding: 0px;
+}
+.opener-container button{
+    height: 25px;
+    width: 60px;
+    position: relative;
+    border:0px;
+    font-size:30px;
+}
+.sliding-div{
+    position: fixed;
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+ul,li{
+    list-style: none;
+  
+}
+.href:hover{
+    background-color: rgb(17, 94, 17);
+}
+.line:hover{
+    background-color: rgb(17, 94, 17);
+}
+li,a{
+    text-decoration: none;
+    color:white;
+    text-align:left;
+    margin-top:55px;
+    font-size:larger;
+}
+.info{
+    margin-left: 60%;
+    color: white;
+    font-size: medium;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+img{
+    height:15px;
+}
+.opener-container{
+    position: relative;
+    background-image: url(contactpgbg.jpg);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+}
+.contacthead{
+    text-align: center;
+    color: white;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 90px;
+}
+@media (max-width: 768px) {
+    .info{
+        margin-left: 30%;
+    }
+    .contacthead{
+        text-align: left;
+    }
+}
+@media (max-width: 480px) {
+    .info{
+        margin-left: 30%;
+    }
+    .contacthead{
+        text-align: left;
+    }
+} 
+form{
+    width: 100%;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.form-container {
+    margin-left: 5%;
+    border-radius: 15px;
+    background-color: #e9e7e7;
+    width: fit-content;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+input, textarea {
+    width: 200px;
+    background-color: #fdf9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
+
+button.submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    background-color: #45a049;
+}
+section div{
+    background-color: #e2dfdf;
+    border-radius: 5px;
+    text-align: center;
+    height: fit-content;
+    margin: 10px;
+    width: 350px;
+    margin: auto;
+}
+section{
+    flex: 1 1 32%;
+    justify-content: flex-start; /* Aligns content at the top */
+}
+@media (max-width: 768px) {
+    section div {
+        flex: 1 1 48%; /* Two columns for medium screens */
+    }
+    section{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    section div {
+        flex: 1 1 100%; /* Single column for small screens */
+    }
+    section{
+        flex-direction: column;
+    }
+}
+footer{
+    position: relative;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 500px;
+    width: 100%;
+    background-color: #333;
+    color: #f0eaea;
+}
+footer img{
+    height: 200px;
+    margin-right: 30px;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+
+}
+footer h2{
+    width: 80%;
+    text-align: end;
+    border-bottom: 2px solid white;
+}
+.home{
+    margin-left: 50%;
+    margin-right: 46px;
+}
+.services{
+    margin-left: 50%;
+    margin-right: 5px;
+}
+.about-us{
+    margin-left: 50%;
+}
+#foothref {
+    font-size: x-large;
+    font-family: monospace;
+    color: #a7a3a3;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+#foothref:hover {
+    color: white;
+}
+.copyright{
+    font-size: larger;
+    width: 100%;
+    border-top: 2px solid white;
+}
+</style>
+</head>
+<body>
+    <div class="opener-container">
+        <div id="slidingDiv" class="sliding-div"> 
+            <button id="slideOut" class="t" onclick="slideOut()">X</button>
+            <ul class="list">
+                <li class="line"><a href="home.html" class="href"><img src="home.png" alt="">  Home</a></li>
+                <li class="line"><a href="contact.html" class="href"><img src="contact.png" alt="">  Contact</a></li>
+                <li class="line"><a href="services.html" class="href"><img src="services.png" alt="">  Services</a></li>
+                <li class="line"><a href="location.html" class="href"><img src="loca.png" alt="">  Location</a></li>
+                <li class="line"><a href="aboutus.html" class="href"><img src="about.jpg" alt="">  About us</a></li>
+           </ul></div>
+        <nav>
+            <p class="info">  <img src="contact.png" alt=""> | (+92) 3002029870 <img src="loca.png" alt="">| Plot# 911 Sector no 15/B,Bufferzone 2nd floor</p>
+        <h1 class="mainheading"><img src="logo5.PNG" alt="logo">AL-SAMAD ENTERPRISES</h1>
+        <button id="slideIn" class="o" onclick="slideIn()"><b>|||</b></button>
+        </nav><br><br><br><br><br><br><br><br><br>
+        <h1 class="contacthead">Contact Us</h1>
+    </div><br><br>
+    <script>
+        const slidingDiv = document.getElementById('slidingDiv');
+    const slideOutButton = document.getElementById('slideOut');
+    
+    function slideIn() {
+        slidingDiv.classList.remove('slide-out');
+        slidingDiv.classList.add('slide-in');
+        slideOutButton.style.display = 'inline'; 
+    }
+    
+    function slideOut() {
+        slidingDiv.classList.remove('slide-in');
+        slidingDiv.classList.add('slide-out');
+        slideOutButton.style.display = 'none'; 
+    }
+    </script>   
+    <h1 style="font-size: xxx-large; text-align: center; color: #115E11; border-bottom: black;">Let's Talk</h1><br><br><br>
+    <form action="https://formsubmit.co/alsamad2029@gmail.com" method="POST">
+        <div class="form-container">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comp">Company Name:</label><br>
+        <input type="text" id="comp" name="comp" required><br><br>
+    
+        <label for="no.">Contact No:</label><br>
+        <input type="text" id="no." name="no." required><br><br>
+    
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+    
+        <button class="submit" type="submit">Send</button>
+       </div>
+    </form>   <br><br><br><br>
+<section style="display: flex;">
+    <div class="email"><img style="height: 50px;" src="email.png" alt=""><br><h3 style="color: #115E11;">Email</h3><br><p>alsamad2029@gmail.com</p><br></div>
+    <div class="location"><img style="height: 50px;" src="location.png" alt=""><br><h3 style="color: #115E11;">Location</h3><br><p>Plot#911 2nd Floor Sector 15/B Bufferzone,Karachi</p></div>
+    <div class="contact-no."><img style="height: 50px;" src="contact.webp" alt=""><br><h3 style="color: #115E11;">Contact</h3><br><p>(+92) 3002029870<br>(+92) 3138214047</p></div>
+</section><br><br>
+<footer>
+    <br>
+    <img src="icon.jpg" alt="AL-SAMAD ENTERPRISES">
+    <h2 class="v">Quick Links</h2><br>
+    <a id="foothref" class="home" href="home.html">Home</a>
+    <a id="foothref" class="contact" href="contact.html">Contact</a><br><br>
+    <a id="foothref" class="services" href="services.html">Services</a>
+    <a id="foothref" class="location" href="location.html">Location</a><br><br>
+    <a id="foothref" class="about-us" href="aboutus.html">About us</a><br>
+    <div class="copyright"><br>
+    All Copyright &copy; To Al-Samad Enterprises
+    </div><br>
+    <p style="text-align: center;">Designed by <a href="https://upwork.com/freelancers/~01fdc06c8f9afabfb4">Ibrahim Anjum</a></p>
+    </footer>
+</body>
+</html>

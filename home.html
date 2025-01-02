@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Samad Enterprises</title>
+<link rel="icon" href="icon.jpg">
+    <style>
+    *{
+    margin:0px;
+        }
+nav{
+    background-color: black;
+    opacity:0.7;
+    height:fit-content;
+    width:100%;
+    padding:15px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+    position:relative;
+    z-index: 90;
+    overflow-y: auto;
+    border-bottom:2px solid white ;
+}
+.mainheading{
+
+    position: relative;
+    font-size: 40px;
+    text-align:center;
+    font-family: monospace;
+    background: linear-gradient(to left, #3dee8d9d, #19ce55); 
+    -webkit-background-clip:text; 
+    color: transparent;
+    margin: 0px;
+    img{
+        height: 90px;
+    }
+}
+.t{
+    background-color: black;
+    color:white;
+}
+.o{
+    background: none;
+    margin-left:1px;
+    border:0px;
+    padding: 0px;
+    border-radius: 0px;
+    width:25px;
+    transition: transform 0.2s ease;
+    transform: rotate(90deg);
+    color: white;
+}
+.o:focus {
+    transform: rotate(0deg);
+}
+    .sliding-div {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 2s ease;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    z-index: 500;
+}
+
+.sliding-div.slide-in {
+    transform: translateX(0);
+}
+
+.sliding-div.slide-out {
+    transform: translateX(-100%);
+    padding: 0px;
+}
+button{
+    color: black;
+    height: 25px;
+    width: 60px;
+    position: relative;
+    border:0px;
+    font-size:30px;
+}
+.sliding-div{
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+ul,li{
+    list-style: none;
+  
+}
+.href:hover{
+    background-color: rgb(17, 94, 17);
+}
+.line:hover{
+    background-color: rgb(17, 94, 17);
+}
+li,a{
+    text-decoration: none;
+    color:white;
+    text-align:left;
+    margin-top:55px;
+    font-size:larger;
+}
+.info{
+    margin-left: 60%;
+    color: white;
+    font-size: medium;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+img{
+    height:15px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.opener-container {
+            background-image: url(embroidery-technology.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+            overflow: hidden; 
+        }
+
+        .opener-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .tagline {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            text-align: center;
+            color: white;
+            z-index: 1;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        .tagline h1 {
+        background: linear-gradient(to left, #ffffff96, #ffffff); 
+        -webkit-background-clip:text; 
+        color: transparent;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .tagline button {
+            background: linear-gradient(rgba(125, 146, 125, 0), rgb(124, 146, 124));
+            border: none;
+            border-radius: 17px;
+            padding: 10px 20px;
+            font-size: large;
+            cursor: pointer;
+            color: white;
+            font-family: 'Lucida Sans', sans-serif;
+            margin-top: 0px;
+            transition: transform 0.1s ease, background-color 0.1s ease;
+        }
+
+        .tagline button:hover {
+            background: rgb(124, 146, 124);
+        }
+    .learnmore{
+        background:linear-gradient(rgba(125, 146, 125, 0),rgb(124, 146, 124));
+        margin-top: 17px;
+        height: fit-content;
+        width: fit-content;
+        border-radius: 25px;
+        font-size: large;
+        padding: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+main{
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ .scroll-opener p{
+    background-color: #f0eaea;
+    padding: 20px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+section div {
+    flex: 1 1 32%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex; /* Use flex to align content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content from the top */
+    height: 300px; /* Fixed height for the divs */
+}
+
+/* Make sure that content inside div doesn't overlap */
+section div p {
+    background-color: #f0eaea;
+    height: 100%; /* Let the paragraph fill the div */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+/* Optional: Make divs stack on smaller screens */
+@media (max-width: 768px) {
+    section div {
+        flex: 1 1 48%; /* Adjust width to fit two columns on medium screens */
+    }
+    .info{
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    section div {
+        flex: 1 1 100%; /* Adjust to 1 column when screen is very small */
+    }
+    .info{
+        margin-left: 30%;
+    }
+}
+section div h2 {
+    margin-bottom: 10px; /* Optional: adjust spacing between heading and paragraph */
+}
+footer{
+    position: relative;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 500px;
+    width: 100%;
+    background-color: #333;
+    color: #f0eaea;
+}
+footer img{
+    height: 200px;
+    margin-right: 30px;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+
+}
+footer h2{
+    width: 80%;
+    text-align: end;
+    border-bottom: 2px solid white;
+}
+.home{
+    margin-left: 50%;
+    margin-right: 46px;
+}
+.services{
+    margin-left: 50%;
+    margin-right: 5px;
+}
+.about-us{
+    margin-left: 50%;
+}
+#foothref {
+    font-size: x-large;
+    font-family: monospace;
+    color: #a7a3a3;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#foothref:hover {
+    color: white;
+}
+.copyright{
+    font-size: larger;
+    width: 100%;
+    border-top: 2px solid white;
+}
+ </style>
+</head>
+<body>
+    <div class="opener-container">
+    <div id="slidingDiv" class="sliding-div"> 
+        <button id="slideOut" class="t" onclick="slideOut()">X</button>
+        <ul class="list">
+            <li class="line"><a href="home.html" class="href"><img src="home.png" alt="">  Home</a></li>
+            <li class="line"><a href="contact.html" class="href"><img src="contact.png" alt="">  Contact</a></li>
+            <li class="line"><a href="services.html" class="href"><img src="services.png" alt="">  Services</a></li>
+            <li class="line"><a href="location.html" class="href"><img src="loca.png" alt="">  Location</a></li>
+            <li class="line"><a href="aboutus.html" class="href"><img src="about.jpg" alt="">  About us</a></li>
+       </ul></div>
+    <nav>
+        <p class="info">  <img src="contact.png" alt=""> | (+92) 3002029870 <img src="loca.png" alt="">| Plot# 911 Sector no 15/B,Bufferzone 2nd floor</p>
+    <h1 class="mainheading"><img src="logo5.PNG" alt="logo">AL-SAMAD ENTERPRISES</h1>
+    <button id="slideIn" class="o" onclick="slideIn()"><b>|||</b></button>
+    </nav>
+<div class="tagline"><h1>Where Art Meets Thread</h1>
+    <button class="learnmore" onclick="location.href='#main'">Learn more</button></div>      
+<script>
+    const slidingDiv = document.getElementById('slidingDiv');
+const slideOutButton = document.getElementById('slideOut');
+
+function slideIn() {
+    slidingDiv.classList.remove('slide-out');
+    slidingDiv.classList.add('slide-in');
+    slideOutButton.style.display = 'inline'; 
+}
+
+function slideOut() {
+    slidingDiv.classList.remove('slide-in');
+    slidingDiv.classList.add('slide-out');
+    slideOutButton.style.display = 'none'; 
+}
+</script>
+</div>
+<main id="main">
+    <div class="scroll-opener">
+    <h2 style="text-align: center; color: #115E11; margin-top: 50px;">Crafting Excellence, One Stitch at a Time</h2>
+    <p style="text-align: center; color: #333; line-height: 1.6; max-width: 800px; margin: 20px auto;">
+        At Al-Samad Enterprises, we bring your visions to life through the art of embroidery. With a commitment to precision and creativity, we specialize in delivering exceptional craftsmanship that meets the highest standards. Whether it's intricate designs for apparel, custom branding, or unique textile enhancements, our team ensures each stitch tells your story with elegance and style.
+    </p></div>
+<br><br><br><br><br>
+<section>
+    <div class="hero-1"><h2 style="color: #115E11;">Facility</h2>
+    <p>Our company has multiple modern multi-head embroidery machines, along with an in-house digitizing system and a fully equipped production setup. This helps us provide all services in one place for our valued customers. We also offer in-house lazer-cutting for accurate and high-quality results.</p>
+    </div>
+    <div class="hero-2"><h2 style="color: #115E11;">Background</h2>
+    <p>This company was established in the year 2007 in Karachi, Pakistan, with the vision of providing innovative and high-quality solutions in the embroidery industry. From its humble beginnings, the company has focused on blending tradition with technology to create exceptional products.</p>
+    </div>
+    <div class="hero-3"><h2 style="color: #115E11;">Vision</h2>
+    <p> Its founder believed in the power of precision and customer satisfaction, and this mindset has driven the company to continually grow and adapt to changing industry needs. With a commitment to excellence and an unwavering dedication to quality, the company has successfully earned the trust and respect of its clients over the years.</p>
+    </div>
+</section>
+<br><br><br><br><br><br>
+</main>
+<footer>
+<br>
+<img src="icon.jpg" alt="AL-SAMAD ENTERPRISES">
+<h2 class="v">Quick Links</h2><br>
+<a id="foothref" class="home" href="home.html">Home</a>
+<a id="foothref" class="contact" href="contact.html">Contact</a><br><br>
+<a id="foothref" class="services" href="services.html">Services</a>
+<a id="foothref" class="location" href="location.html">Location</a><br><br>
+<a id="foothref" class="about-us" href="aboutus.html">About us</a><br>
+<div class="copyright"><br>
+All Copyright &copy; To Al-Samad Enterprises
+</div><br>
+<p style="text-align: center;">Designed by <a href="https://upwork.com/freelancers/~01fdc06c8f9afabfb4">Ibrahim Anjum</a></p>
+</footer>
+</body>
+</html>
