@@ -267,6 +267,23 @@ section img{
 section img:hover {
     transform: translateY(-25px);
 }
+                button:focus, a:focus, div:focus {
+    outline: none;  /* Removes the default outline on focus */
+    box-shadow: none;  /* Removes any default focus box-shadow */
+}
+
+/* Prevent active states highlighting on mobile for buttons, links, and divs */
+button:active, a:active, div:active {
+    background-color: transparent;  /* No background color during tap */
+    outline: none;  /* No outline on active state */
+    box-shadow: none;  /* Removes the active box-shadow */
+    -webkit-tap-highlight-color: transparent;  /* Specifically targets mobile (iOS, Android) to prevent blue highlight */
+}
+::selection {
+    background-color:green; /* Customize the background color */
+    color: white; /* Customize the text color */
+  }
+
     </style>
 </head>
 <body>
