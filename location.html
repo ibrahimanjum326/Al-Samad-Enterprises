@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <title>Al-Samad Enterprises</title>
-    <link rel="icon" href="icon.jpg">
+  <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+  <title>Al-Samad Enterprises - Location</title>
 <style>
     *{
         margin: 0px;
@@ -31,124 +34,23 @@ iframe{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 
 }
-nav{
-    background-color: black;
-    opacity:0.7;
-    height:fit-content;
-    width:100%;
-    padding-bottom: 0px;
-    position:relative;
-    z-index: 90;
-    overflow-y: auto;
-    border-bottom:2px solid white ;
-}
-.mainheading{
-    position: relative;
-    font-size: 40px;
-    text-align:center;
-    font-family: monospace;
-    background: linear-gradient(to left, #3dee8d9d, #19ce55); 
-    -webkit-background-clip:text; 
-    color: transparent;
-    margin: 0px;
-    img{
-        height: 80px;
-    }
-}
-.t{
-    background-color: black;
-    color:white;
-}
-.o{
-    background: none;
-    margin-left:12px;
-    border:0px;
-    padding: 0px;
-    border-radius: 0px;
-    width:25px;
-    transition: transform 0.2s ease;
-    transform: rotate(90deg);
-    color: white;
-}
-.o:focus {
-    transform: rotate(0deg);
-}
-    .sliding-div {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    transform: translateX(-100%);
-    transition: transform 2s ease;
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    z-index: 500;
-}
-
-.sliding-div.slide-in {
-    transform: translateX(0);
-}
-
-.sliding-div.slide-out {
-    transform: translateX(-100%);
-    padding: 0px;
-}
-button{
-    color: black;
-    height: 25px;
-    width: 60px;
-    position: relative;
-    border:0px;
-    font-size:30px;
-}
-.sliding-div{
-    position: fixed;
-    margin: 0px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    height: 100%;
-}
-ul,li{
-    list-style: none;
-  
-}
-.href:hover{
-    background-color: rgb(17, 94, 17);
-}
-.line:hover{
-    background-color: rgb(17, 94, 17);
-}
-li,a{
-    text-decoration: none;
-    color:white;
-    text-align:left;
-    margin-top:55px;
-    font-size:larger;
-}
-.info{
-    margin-left: 60%;
-    color: white;
-    font-size: medium;
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-img{
-    height:15px;
-}
 .opener-container{
     position: relative;
     background-image: url(thread.jpeg);
     background-size: cover;
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
 .location{
     text-align: center;
     color: white;
     font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 90px;
+    font-size: 70px;
+    margin-top: 10%;
 }
 @media (max-width: 768px) {
     .info{
-        margin-left: 5%;
+        margin-left: 30%;
     }
     iframe{
         width: 300px;
@@ -156,110 +58,51 @@ img{
 }
 @media (max-width: 480px) {
     .info{
-        margin-left: 5%;
+        margin-left: 30%;
     }
     iframe{
         width: 300px;
     }
 }
-footer{
-    position: relative;
-    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 600px;
-    width: 100%;
-    background-color: #333;
-    color: #f0eaea;
-}
-footer img{
-    height: 200px;
-    margin-right: 30px;
-    margin: 0px;
-    padding: 0px;
-    width: 200px;
-
-}
-footer h2{
-    width: 80%;
-    text-align: end;
-    border-bottom: 2px solid white;
-}
-.home{
-    margin-left: 50%;
-    margin-right: 46px;
-}
-.services{
-    margin-left: 50%;
-    margin-right: 5px;
-}
-.about-us{
-    margin-left: 50%;
-}
-#foothref {
-    font-size: x-large;
-    font-family: monospace;
-    color: #a7a3a3;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-#foothref:hover {
-    color: white;
-}
-.copyright{
-    font-size: larger;
-    width: 100%;
-    border-top: 2px solid white;
-}
-            button:focus, a:focus, div:focus {
-    outline: none;  /* Removes the default outline on focus */
-    box-shadow: none;  /* Removes any default focus box-shadow */
-}
-
-/* Prevent active states highlighting on mobile for buttons, links, and divs */
-button:active, a:active, div:active {
-    background-color: transparent;  /* No background color during tap */
-    outline: none;  /* No outline on active state */
-    box-shadow: none;  /* Removes the active box-shadow */
-    -webkit-tap-highlight-color: transparent;  /* Specifically targets mobile (iOS, Android) to prevent blue highlight */
-}
-::selection {
-    background-color:green; /* Customize the background color */
-    color: white; /* Customize the text color */
-  }
-
     </style>
 </head>
 <body>
+    <!-- PAGE LOADER -->
+  <div id="page-loader" aria-hidden="false">
+    <div aria-hidden="true" class="four-dot-loader" role="status" aria-label="Loading">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
     <div class="opener-container">
-        <div id="slidingDiv" class="sliding-div"> 
-            <button id="slideOut" class="t" onclick="slideOut()">X</button>
-            <ul class="list">
-                <li class="line"><a href="index.html" class="href"><img src="home.png" alt="">  Home</a></li>
-                <li class="line"><a href="contact.html" class="href"><img src="contact.png" alt="">  Contact</a></li>
-                <li class="line"><a href="services.html" class="href"><img src="services.png" alt="">  Services</a></li>
-                <li class="line"><a href="location.html" class="href"><img src="loca.png" alt="">  Location</a></li>
-                <li class="line"><a href="aboutus.html" class="href"><img src="about.jpg" alt="">  About us</a></li>
-           </ul></div>
-        <nav>
-            <p class="info">  <img src="contact.png" alt=""> | (+92) 3002029870 <img src="loca.png" alt="">| Plot# 911 Sector no 15/B,Bufferzone 2nd floor</p>
-        <h1 class="mainheading"><img src="logo5.PNG" alt="logo">AL-SAMAD ENTERPRISES</h1>
-        <button id="slideIn" class="o" onclick="slideIn()"><b>|||</b></button>
-        </nav><br><br><br><br><br><br><br><br><br>
-    <script>
-        const slidingDiv = document.getElementById('slidingDiv');
-    const slideOutButton = document.getElementById('slideOut');
-    
-    function slideIn() {
-        slidingDiv.classList.remove('slide-out');
-        slidingDiv.classList.add('slide-in');
-        slideOutButton.style.display = 'inline'; 
+  <header>
+    <nav>
+      <div class="logo" style="display: flex;"><img src="./logo5-removebg-preview.png" alt=""><h1>Al Samad Enterprises</h1></div>
+
+      <!-- Hamburger button -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation links -->
+      <div class="as" id="navLinks">
+        <a class="a" href="./index.html">Home</a>
+        <a class="a" href="./location.html">Location</a>
+        <a class="a" href="./services.html">Services</a>
+        <a class="a" href="./aboutus.html">About</a>
+        <a class="a" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <script>
+        function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
     }
-    
-    function slideOut() {
-        slidingDiv.classList.remove('slide-in');
-        slidingDiv.classList.add('slide-out');
-        slideOutButton.style.display = 'none'; 
-    }
-    </script>
+  </script>
 <h1 class="location">Location</h1>
 </div><br><br><br>
  <h1 style="color: #115E11;">Visit Our Factory</h1><br><br><br>
@@ -270,19 +113,44 @@ button:active, a:active, div:active {
 <br><br><br><br><br><br>
 <p style="text-align: center; font-size: x-large; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;">View Our Work And Let's Have A Talk!</p>
 </div> <br><br><br><br><br><br><br>
-<footer>
-    <br>
-    <img src="icon.jpg" alt="AL-SAMAD ENTERPRISES">
-    <h2 class="v">Quick Links</h2><br>
-    <a id="foothref" class="home" href="index.html">Home</a>
-    <a id="foothref" class="contact" href="contact.html">Contact</a><br><br>
-    <a id="foothref" class="services" href="services.html">Services</a>
-    <a id="foothref" class="location" href="location.html">Location</a><br><br>
-    <a id="foothref" class="about-us" href="aboutus.html">About us</a><br>
-    <div class="copyright"><br>
-    All Copyright &copy; To Al-Samad Enterprises
-    </div><br>
-    <p style="text-align: center;">Designed by <a href="https://upwork.com/freelancers/~01fdc06c8f9afabfb4">Ibrahim Anjum</a></p>
-    </footer>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About Us -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>Al-Samad Enterprises specializes in premium embroidery services, delivering quality and precision for businesses and individuals alike.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="services.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- We Are Social -->
+    <div class="footer-col">
+      <h3>Credendials</h3>
+      <div class="social-links">
+        <p> alsamad2029@gmail.com</p><br>
+        <p>+(92)3002029870</p><br>
+        <p>Plot#911 2nd Floor Sector 15/B Bufferzone,Karachi</p><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Al-Samad Enterprises | Made by 
+      <a href="https://upwork.com/freelancers/~01fdc06c8f9afabfb4" target="_blank">Ibrahim Anjum</a>
+    </p>
+  </div>
+</footer>
 </body>
 </html>
