@@ -7,20 +7,26 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <link rel="stylesheet" href="style.css">
    <script src="script.js"></script>
-  <title>Al-Samad Enterprises - About Us</title>
-    <style>
+  <title>Al-Samad Enterprises - Contact</title>
+<style>
 
+.info{
+    margin-left: 60%;
+    color: white;
+    font-size: medium;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 img{
     height:15px;
 }
 .opener-container{
     position: relative;
-    background-image: url(aboutbg.jpeg);
+    background-image: url(contactpgbg.jpg);
     background-size: cover;
-    height: 700px;
+    height: 650px;
     width: 100%;
 }
-.abouthead{
+.contacthead{
     text-align: center;
     color: white;
     font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -30,7 +36,7 @@ img{
     .info{
         margin-left: 30%;
     }
-    .serviceshead{
+    .contacthead{
         text-align: left;
     }
 }
@@ -38,15 +44,208 @@ img{
     .info{
         margin-left: 30%;
     }
-    .serviceshead{
+    .contacthead{
         text-align: left;
     }
 } 
-.scroll-opener p{
-    background-color: #f0eaea;
-    padding: 20px;
+form{
+    width: 100%;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-    </style>
+.form-container {
+    margin-left: 5%;
+    border-radius: 15px;
+    background-color: #e9e7e7;
+    width: 90%;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #fdf9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
+
+button.submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    background-color: #45a049;
+}
+section div{
+    background-color: #e2dfdf;
+    border-radius: 5px;
+    text-align: center;
+    height: fit-content;
+    margin: 10px;
+    width: 350px;
+    margin: auto;
+}
+section{
+    flex: 1 1 32%;
+    justify-content: flex-start; /* Aligns content at the top */
+}
+@media (max-width: 768px) {
+    section div {
+        flex: 1 1 48%; /* Two columns for medium screens */
+    }
+    section{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    section div {
+        flex: 1 1 100%; /* Single column for small screens */
+    }
+    section{
+        flex-direction: column;
+    }
+}
+/* Overlay backgrounds */
+.popup-overlay, .custom-form-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Popup box */
+.popup-content, .form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  animation: slideUp 0.4s ease;
+}
+
+/* Form box scroll fix */
+.form-box {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Inputs */
+.form-box input, .form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn, .submit {
+  background-color: #115E11;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover, .submit:hover { background-color: #0d4a0d; }
+.btn-no { background-color: #777; }
+.btn-no:hover { background-color: #555; }
+.upload-box:hover {
+  background: #c8ffb1bd;
+  border-color: #0d4a0d;
+}
+
+/* Animations */
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes slideUp { from {transform: translateY(50px);} to {transform: translateY(0);} }
+.upload-box {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed black;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+}
+
+.upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.upload-box p {
+  position: absolute;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+/* Pages Section (Email, Location, Contact) */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section div {
+  background-color: #e2dfdf;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+section img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  section div {
+    width: 90%;
+  }
+}
+
+</style>
 </head>
 <body>
     <!-- PAGE LOADER -->
@@ -58,6 +257,51 @@ img{
       <div class="dot"></div>
     </div>
   </div>
+ <!-- Custom Request Popup -->
+<div id="customRequestPopup" class="popup-overlay" style="display:flex;">
+  <div class="popup-content">
+    <h2 style="color:#115E11;">Do you want a custom request?</h2>
+    <button class="btn" onclick="openCustomForm()">Yes</button>
+    <button class="btn btn-no" onclick="closePopup()">No</button>
+  </div>
+</div>
+
+<!-- Hidden Custom Request Form -->
+<div id="customFormContainer" class="custom-form-overlay" style="display:none;">
+  <div class="form-box">
+    <h2 style="color:#115E11;">Custom Request Form</h2>
+    <form id="customForm" action="https://formsubmit.co/alsamad2029@gmail.com" method="POST" enctype="multipart/form-data">
+      
+      <label for="cname">Name:</label>
+      <input type="text" id="cname" name="cname" required>
+
+      <label for="cemail">Email:</label>
+      <input type="email" id="cemail" name="cemail" required>
+
+      <label for="cphone">Phone Number:</label>
+      <input type="tel" id="cphone" name="cphone" required>
+
+<label for="csample">Embroidery Sample Picture:</label>
+<div class="upload-box" onclick="document.getElementById('csample').click()">
+  <input type="file" id="csample" name="csample" accept="image/*" required onchange="previewImage(event)" hidden>
+  <img id="preview-img" alt="Preview" style="display:none;">
+  <p id="upload-text">Click or Drag & Drop to Upload</p>
+</div>
+
+      <label for="cthread">Thread Color:</label>
+      <input type="text" id="cthread" name="cthread" required>
+
+      <label for="cfabric">Fabric:</label>
+      <input type="text" id="cfabric" name="cfabric" required>
+
+      <label for="cdesc">Description (min 20 words):</label>
+      <textarea id="cdesc" name="cdesc" minlength="100" required></textarea>
+
+      <button class="submit" type="submit">Submit Custom Request</button>
+      <button type="button" class="btn btn-no" onclick="closeCustomForm()">Cancel</button>
+    </form>
+  </div>
+</div>
   <header>
     <nav>
       <div class="logo" style="display: flex;"><img src="./logo5-removebg-preview.png" alt=""><h1>Al Samad Enterprises</h1></div>
@@ -84,21 +328,32 @@ img{
       document.getElementById("navLinks").classList.toggle("active");
     }
   </script>
-<main style=" font-family:  -apple-tsystem, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;">
-    <div class="scroll-opener">     
-        <h2 style="text-align: center; color: #115E11; margin-top: 50px;">Introduction</h2>  
-<p style="text-align: center; color: #333; line-height: 1.6; max-width: 800px; margin: 20px auto;"> Founded in 2007, Al-Samad Enterprises has been a pioneer in the art of embroidery, combining innovation with traditional craftsmanship. Over the years, we have established ourselves as a trusted name in creating exquisite embroidery designs that add charm and distinction to garments and textiles. Whether for corporate branding, fashion embellishments, or personalized creations, our skilled team ensures every piece reflects unmatched quality, elegance, and attention to detail, turning your ideas into beautifully crafted realities. </p>
-</div><br><br><br>
-<div class="mid-container" style="background-color: #d4d1d1; padding-bottom: 9px; ">
-<div class="img-container" style="display: flex; overflow: auto;">
-<div class="cotton" style="margin: 3px; background-color: #f0eaea; padding: 6px;"><img style="height: 200px; width: 300px;" src="cotton.jpg" alt="cotton"><br><h3 style="color: #115E11;">Cotton</h3></div>     
-<div class="polyester" style="margin: 3px; background-color: #f0eaea; padding: 6px;"><img style="height: 200px; width: 300px;" src="polyester.jpg" alt="cotton"><br><h3 style="color: #115E11;">Polyester</h3></div>     
-<div class="denim" style="margin: 3px; background-color: #f0eaea; padding: 6px;"><img style="height: 200px; width: 300px;" src="denim.jpg" alt="cotton"><br><h3 style="color: #115E11;">Denim</h3></div>     
-</div>  <br><br>
-<p style=" padding: 15px; color: white; background-color: #115E11; line-height: 1.6; width: 90%; margin: 3px; border-radius: 5px;">  
-At Al-Samad Enterprises, we specialize in embroidery on a wide variety of fabrics, including cotton, polyester, and denim. Our expertise allows us to bring intricate designs to life, ensuring vibrant colors and lasting quality regardless of the material. Whether it's lightweight cotton for casual wear, durable polyester for uniforms, or rugged denim for stylish apparel, we adapt our techniques to meet the unique needs of each fabric, delivering exceptional results every time.</p>
-</div><br><br><br><br>
-</main>
+    <h1 style="font-size: xxx-large; text-align: center; color: #115E11; border-bottom: black;">Let's Talk</h1><br><br><br>
+    <form action="https://formsubmit.co/alsamad2029@gmail.com" method="POST">
+        <div class="form-container">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comp">Company Name:</label><br>
+        <input type="text" id="comp" name="comp" required><br><br>
+    
+        <label for="no.">Contact No:</label><br>
+        <input type="text" id="no." name="no." required><br><br>
+    
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+    
+        <button class="submit" type="submit">Send</button>
+       </div>
+    </form>   <br><br><br><br>
+<section style="display: flex;">
+    <div class="email"><img style="height: 50px;" src="email.png" alt=""><br><h3 style="color: #115E11;">Email</h3><br><p>alsamad2029@gmail.com</p><br></div>
+    <div class="location"><img style="height: 50px;" src="location.png" alt=""><br><h3 style="color: #115E11;">Location</h3><br><p>Plot#911 2nd Floor Sector 15/B Bufferzone,Karachi</p></div>
+    <div class="contact-no."><img style="height: 50px;" src="contact.webp" alt=""><br><h3 style="color: #115E11;">Contact</h3><br><p>(+92) 3002029870<br>(+92) 3138214047</p></div>
+</section><br><br>
 <!-- Footer Section -->
 <footer class="footer">
   <div class="footer-container">
@@ -119,6 +374,7 @@ At Al-Samad Enterprises, we specialize in embroidery on a wide variety of fabric
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
+
     <!-- We Are Social -->
     <div class="footer-col">
       <h3>Credendials</h3>
@@ -137,5 +393,60 @@ At Al-Samad Enterprises, we specialize in embroidery on a wide variety of fabric
     </p>
   </div>
 </footer>
+<script>
+function closePopup() {
+  document.getElementById("customRequestPopup").style.display = "none";
+}
+
+function openCustomForm() {
+  document.getElementById("customRequestPopup").style.display = "none";
+  document.getElementById("customFormContainer").style.display = "flex";
+}
+  // Close popup
+  function closePopup() {
+    document.getElementById("customRequestPopup").style.display = "none";
+  }
+
+  // Open custom form
+  function openCustomForm() {
+    document.getElementById("customRequestPopup").style.display = "none";
+    document.getElementById("customFormContainer").style.display = "flex";
+  }
+
+  // Close custom form
+  function closeCustomForm() {
+    document.getElementById("customFormContainer").style.display = "none";
+  }
+
+  // Image Preview
+  function previewImage(event) {
+    const reader = new FileReader();
+    reader.onload = function(){
+      const img = document.getElementById("preview-img");
+      img.src = reader.result;
+      img.style.display = "block";
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+  function previewImage(event) {
+  const file = event.target.files[0];
+  const img = document.getElementById("preview-img");
+  const text = document.getElementById("upload-text");
+
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      img.src = e.target.result;
+      img.style.display = "block";
+      text.style.display = "none";
+    }
+    reader.readAsDataURL(file);
+  } else {
+    img.style.display = "none";
+    text.style.display = "block";
+  }
+}
+
+</script>
 </body>
 </html>
